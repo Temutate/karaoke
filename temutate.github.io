@@ -47,12 +47,15 @@
             });
         });
 
-        function generateQRCode(songCode) {
-            let qr = qrcode(0, "L");
-            qr.addData(`https://karaoke.com/song/${songCode}`);
-            qr.make();
-            document.getElementById("qrCode").innerHTML = qr.createImgTag();
-        }
+      function generateQRCode(songCode) {
+    let qrCanvas = document.getElementById("qrCode");
+    qrCanvas.innerHTML = ""; // Clear previous QR code
+
+    let qr = new QRious({
+        element: qrCanvas,
+        value: `https://karaoke.com/song/${songCode}`,
+        size: 200
+    });
     </script>
 
 </body>
