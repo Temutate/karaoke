@@ -19,7 +19,7 @@
     <div id="results"></div>
     <canvas id="qrCode"></canvas>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <script>
         let songs = [
             { name: "Shape of You", artist: "Ed Sheeran", code: "101" },
